@@ -1,0 +1,131 @@
+/* Color Palette */
+/* Typography */
+/* 
+
+1. "Verified Graduate" has the same color as the person's name with 50% opacity
+2. Review paragraphs inside the quotations have the same color as well, but are at 70% opacity 
+
+*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: inherit;
+  font-size: 62.5%; }
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background-color: #ecf2f8;
+  padding: 2rem 1rem; }
+  @media (min-width: 1440px) {
+    body {
+      padding: 10rem; } }
+
+.container {
+  max-width: 136rem;
+  margin: 0 auto;
+  padding: 0 1.5rem; }
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1;
+  grid-gap: 3rem; }
+  @media (min-width: 1440px) {
+    .grid-wrapper {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr); } }
+  .grid-wrapper .grid-item {
+    padding: 3rem;
+    border-radius: 1.2rem;
+    position: relative; }
+    @media (min-width: 1440px) {
+      .grid-wrapper .grid-item.daniel {
+        grid-column: 1 / 3;
+        grid-row: 1; }
+      .grid-wrapper .grid-item.jonathan {
+        grid-column: 3;
+        grid-row: 1; }
+      .grid-wrapper .grid-item.jeanette {
+        grid-column: 1;
+        grid-row: 2; }
+      .grid-wrapper .grid-item.patrick {
+        grid-column: 2 / 4;
+        grid-row: 2; }
+      .grid-wrapper .grid-item.kira {
+        grid-column: 4;
+        grid-row: 1 / -1; } }
+    .grid-wrapper .grid-item.jeanette .portrait-wrapper .testimonials-details .testimonial-name, .grid-wrapper .grid-item.kira .portrait-wrapper .testimonials-details .testimonial-name {
+      color: #19212e; }
+    .grid-wrapper .grid-item.jeanette .portrait-wrapper .testimonials-details .testimonial-role, .grid-wrapper .grid-item.kira .portrait-wrapper .testimonials-details .testimonial-role {
+      color: #19212e;
+      opacity: 0.5; }
+    .grid-wrapper .grid-item.jeanette .testimonial-card-heading, .grid-wrapper .grid-item.kira .testimonial-card-heading {
+      color: #19212e; }
+    .grid-wrapper .grid-item.jeanette .testimonial-paragraph, .grid-wrapper .grid-item.kira .testimonial-paragraph {
+      color: #19212e;
+      opacity: 0.7; }
+    .grid-wrapper .grid-item.purple {
+      background-color: #7541c8; }
+    .grid-wrapper .grid-item.dark-gray {
+      background-color: #48556a; }
+    .grid-wrapper .grid-item.white {
+      background-color: white; }
+    .grid-wrapper .grid-item.black {
+      background-color: #19212e; }
+    .grid-wrapper .grid-item .background-quotes {
+      position: absolute;
+      z-index: 1;
+      right: 2rem;
+      top: 0;
+      width: 4rem;
+      height: 4rem; }
+      @media (min-width: 467px) {
+        .grid-wrapper .grid-item .background-quotes {
+          width: 6rem;
+          height: 6rem; } }
+      @media (min-width: 1440px) {
+        .grid-wrapper .grid-item .background-quotes {
+          right: 10rem;
+          width: 12rem;
+          height: 12rem; } }
+    .grid-wrapper .grid-item .portrait-wrapper {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 2rem; }
+      .grid-wrapper .grid-item .portrait-wrapper .testimonial-portrait {
+        display: block;
+        border-radius: 50%;
+        margin-right: 2rem;
+        width: 3.5rem;
+        height: 3.5rem; }
+      .grid-wrapper .grid-item .portrait-wrapper .testimonials-details .testimonial-name {
+        font-size: 1.6rem;
+        margin-bottom: 0.25rem;
+        color: #cfcfcf; }
+      .grid-wrapper .grid-item .portrait-wrapper .testimonials-details .testimonial-role {
+        font-size: 1.4rem;
+        color: #cfcfcf;
+        opacity: 0.5; }
+    .grid-wrapper .grid-item .testimonial-card-heading {
+      font-size: 1.6rem;
+      margin-bottom: 2rem;
+      color: #ecf2f8;
+      line-height: 1.4;
+      position: relative;
+      z-index: 10; }
+      @media (min-width: 768px) {
+        .grid-wrapper .grid-item .testimonial-card-heading {
+          font-size: 2rem; } }
+    .grid-wrapper .grid-item .testimonial-paragraph {
+      font-size: 1.4rem;
+      color: #cfcfcf;
+      opacity: 0.7;
+      line-height: 1.4; }
+      @media (min-width: 768px) {
+        .grid-wrapper .grid-item .testimonial-paragraph {
+          font-size: 1.6rem; } }

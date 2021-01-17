@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: inherit;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $font-primary;
+  background-color: $light-grayish-blue;
+  padding: 2rem 1rem;
+
+  @media (min-width: 1440px) {
+    padding: 10rem;
+  }
+}
+
+.container {
+  max-width: 136rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}

@@ -1,0 +1,21 @@
+{
+  "name": "testimonials-grid",
+  "version": "1.0.0",
+  "description": "A responsive testimonials grid section built with HTML5 and CSS3.",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "keywords": [
+    "responsive",
+    "testimonials",
+    "grid",
+    "frontendmentor\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D",
+    "mentor"
+  ],
+  "author": "Bruno Mazza",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
